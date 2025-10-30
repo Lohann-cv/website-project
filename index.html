@@ -36,17 +36,77 @@
             </div>
             <!--Les article qui raconte le petit résumé des grande parties-->
             <div id="p1">
-                <article>
-                    <h2 class="section-title">Les debuts de l'informatique</h2>
-                    <h4 class="article-title">Alan Turing</h4>
-                    <p>Inventeur de la machine bombe</p>
+                <article class="linux-card">
+                    <div class="linux-col text">
+                        <h2 class="section-title">Les debuts de l'informatique</h2>
+                        <h4 class="article-title">Alan Turing</h4>
+
+                        <ul class="linux-points">
+                        <li>Alan Turing est un mathematicien britanique considerer comme le pere de l'informatique</li>
+                        <li>En 1936 il invente le concept de la machine de Turing, la base de tout les ordinateurs moderne</li>
+                        </ul>
+
+                        <div class="linux-badges">
+                        <span id="rose" class="chip">Alan Turing</span>
+                        <span id="rose" class="chip">Enigma</span>
+                        <span id="rose" class="chip">Rose</span>
+                        </div>
+                    </div>
+
+                    <div class="linux-col visuals">
+                        <figure class="linux-hero">
+                        <img
+                            src="images/gens.jpg"
+                            alt="Salle de serveurs exécutant Linux"
+                            class="server"
+                            loading="lazy"
+                        />
+                        <img
+                            src="images/enig.png"
+                            alt="Mascotte Tux représentant Linux"
+                            class="tux"
+                            loading="lazy"
+                        />
+                        <figcaption class="linux-caption">Enigma</figcaption>
+                        </figure>
+                    </div>
                 </article>
             </div> 
             <div id="p2">
-                <article>
-                    <h2 class="section-title">L'emergence des reseaux</h2>
-                    <h4 class="article-title">Arpanet</h4>
-                    <p>Le premier résaux (je crois) </p>
+                <article class="linux-card">
+                    <div class="linux-col text">
+                        <h2 class="section-title">L'emergence des reseaux</h2>
+                        <h4 class="article-title">Arpanet</h4>
+
+                        <ul class="linux-points">
+                        <li>1969, le reseau voit le jour. Les premiers ordinateurs connecter !</li>
+                        <li>C’est le premier réseau décentralisé, utilisant la commutation de paquets.</li>
+                        </ul>
+
+                        <div class="linux-badges">
+                        <span class="chip">Arpanet</span>
+                        <span class="chip">LOGIN</span>
+                        <span class="chip">1969</span>
+                        </div>
+                    </div>
+
+                    <div class="linux-col visuals">
+                        <figure class="linux-hero">
+                        <img
+                            src="images/arpanet.jpeg"
+                            alt="Salle de serveurs exécutant Linux"
+                            class="server"
+                            loading="lazy"
+                        />
+                        <img
+                            src="images/map.jpg"
+                            alt="Mascotte Tux représentant Linux"
+                            class="tux"
+                            loading="lazy"
+                        />
+                        <figcaption class="linux-caption">Arpanet</figcaption>
+                        </figure>
+                    </div>
                 </article>
             </div>
             <div id="p3">
@@ -81,7 +141,7 @@
                             class="tux"
                             loading="lazy"
                         />
-                        <figcaption class="linux-caption">Linux, cœur des serveurs modernes</figcaption>
+                        <figcaption class="linux-caption">Linux, coeur des serveurs modernes</figcaption>
                         </figure>
                     </div>
                 </article>
@@ -95,7 +155,61 @@
             </div>
             <div id="p5">
                 <h2 class="section-title">Le quiz !</h2>
-                la partie quiz
+
+                <article class="quiz-card">
+                    <div class="q-item">
+                    <p class="q-title">1) Qui est le créateur du noyau Linux ?</p>
+                    <ul class="q-options">
+                        <li><label><input type="radio" name="q1"> a. pingu le pinguin</label></li>
+                        <li><label><input type="radio" name="q1"> b. linux tovals</label></li>
+                        <li><label><input type="radio" name="q1"> c. lohann coant--verdier</label></li>
+                        <li><label><input type="radio" name="q1"> d. Linus Torvalds</label></li>
+                    </ul>
+                    <button class="reveal" data-target="ans1" aria-expanded="false">Voir la réponse</button>
+                    <div id="ans1" class="answer-box" role="region" aria-live="polite">
+                        Réponse: d
+                    </div>
+                    </div>
+                    <div class="q-item">
+                    <p class="q-title">2) Dans quoi est utilisé le système Linux ?</p>
+                    <ul class="q-options">
+                        <li><label><input type="checkbox" name="q2"> a. Ton frigo high tech</label></li>
+                        <li><label><input type="checkbox" name="q2"> b. Certain serveur</label></li>
+                        <li><label><input type="checkbox" name="q2"> c. Le pc de ton pote hacker plein de malice et de fourberie</label></li>
+                        <li><label><input type="checkbox" name="q2"> d. Ton mac</label></li>
+                    </ul>
+                    <button class="reveal" data-target="ans2" aria-expanded="false">Voir la réponse</button>
+                    <div id="ans2" class="answer-box" role="region" aria-live="polite">
+                        Réponse: a, b, c (d peut etre accepter en soit)
+                    </div>
+                    </div>
+                    <div class="q-item">
+                    <p class="q-title">3) Quel est le nom de la mascotte de Linux ?</p>
+                    <ul class="q-options">
+                        <li><label><input type="radio" name="q3"> a. pengu</label></li>
+                        <li><label><input type="radio" name="q3"> b. tux</label></li>
+                        <li><label><input type="radio" name="q3"> c. turque</label></li>
+                        <li><label><input type="radio" name="q3"> d. Jean Jaque Roussau</label></li>
+                    </ul>
+                    <button class="reveal" data-target="ans3" aria-expanded="false">Voir la réponse</button>
+                    <div id="ans3" class="answer-box" role="region" aria-live="polite">
+                        Réponse: b
+                    </div>
+                    </div>
+                    <div class="q-item">
+                    <p class="q-title">4) Ques qui est jaune et qui attand ?</p>
+                    <ul class="q-options">
+                        <li><label><input type="radio" name="q4"> a. Jaune attent</label></li>
+                        <li><label><input type="radio" name="q4"> b. jonathan</label></li>
+                        <li><label><input type="radio" name="q4"> c. je ne sais pas</label></li>
+                        <li><label><input type="radio" name="q4"> d. bonne question</label></li>
+                    </ul>
+                    <button class="reveal" data-target="ans4" aria-expanded="false">Voir la réponse</button>
+                    <div id="ans4" class="answer-box" role="region" aria-live="polite">
+                        Réponse: a
+                    </div>
+                </div>
+            </article>
             </div>
         </main>
         <!--Mention-->

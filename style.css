@@ -290,3 +290,73 @@ color: transparent et -webkit-text-fill-color: transparent cache la couleur norm
   .linux-hero { aspect-ratio: 16/10; }
   .linux-hero .tux { width: 38%; right: -2%; bottom: -2%; }
 }
+
+#rose{
+    background: linear-gradient(90deg, pink, purple);
+}
+.quiz-card {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.q-item {
+  background: rgba(33,147,176,0.09);
+  border: 1px solid #6dd5ed22;
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-shadow: 0 0 24px #6dd5ed22;
+}
+
+.q-title {
+  margin: 0 0 0.6rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.q-options {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.8rem;
+  display: grid;
+  gap: 0.4rem;
+}
+.q-options li {
+  background: rgba(33,147,176,0.08);
+  border: 1px solid #2193b022;
+  padding: 0.45rem 0.6rem;
+  border-radius: 12px;
+}
+
+.reveal {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg,#2193b0,#6dd5ed);
+  color: #0e2431;
+  border: none;
+  box-shadow: 0 6px 22px #2193b033;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.reveal:hover { transform: scale(1.06); box-shadow: 0 8px 28px #2193b044; }
+
+.answer-box {
+  margin-top: 0.7rem;
+  border-radius: 12px;
+  background: rgba(33,147,176,0.12);
+  border: 1px solid #6dd5ed33;
+  padding: 0 0.9rem;        /* compressé quand caché */
+  max-height: 0;            /* caché par défaut */
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.2s ease;
+  color: #b1eaff;
+}
+.answer-box.show {
+  max-height: 160px;        /* assez pour 1–2 lignes */
+  padding: 0.7rem 0.9rem;   /* expand */
+}
+
+
+@media (max-width: 800px) {
+  .q-options { gap: 0.3rem; }
+}
