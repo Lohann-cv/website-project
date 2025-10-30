@@ -23,14 +23,14 @@
             </header>
             <!--Les sections du site : les differentes parties-->
             <div id="home-page">
-                <h1>Les portes du savoir s'ouvre à vous !<br>L'histoire du Web en 4 grandes parties</h1>
-                <ol>
+                <h1 id="AAA">Les portes du savoir s'ouvre à vous !<br>L'histoire du Web en 4 grandes parties</h1>
+                <ol id="AAA">
                     <li>Les debuts de l'informatique avec Alan Turing</li>
                     <li>L'emergence des reseaux avec Arpanet</li>
                     <li>L'ere du Web avec l'emergence de l'open source</li>
                     <li>L'Intelligence artificielle avec Sam Altman</li>
                 </ol>
-                <p>Et ensuite.....</p>
+                <p id="AAA">Et ensuite.....</p>
                 <br><br>
                 <h1 id="quizo">LE QUIZO QUIZ</h1>
             </div>
@@ -50,10 +50,40 @@
                 </article>
             </div>
             <div id="p3">
-                <article>
-                    <h2 class="section-title">L'ere du Web</h2>
-                    <h4 class="article-title">L'emergence de l'open source</h4>
-                    <p>Linus Torvalds createur de Linux et Git</p>
+                <article class="linux-card">
+                    <div class="linux-col text">
+                        <h2 class="section-title">L'ere du Web</h2>
+                        <h4 class="article-title">Linus Torvalds et l'open source</h4>
+
+                        <ul class="linux-points">
+                        <li>Createur du noyau Linux en 1991, figure centrale de l’architecture et du pilotage des versions du projet.</li>
+                        <li>Decision strategique d’adopter la licence GPL en 1992, qui a securise l’ouverture et la perennite de l’ecosysteme.</li>
+                        </ul>
+
+                        <div class="linux-badges">
+                        <span class="chip">Linux</span>
+                        <span class="chip">GPLv2</span>
+                        <span class="chip">Open source</span>
+                        </div>
+                    </div>
+
+                    <div class="linux-col visuals">
+                        <figure class="linux-hero">
+                        <img
+                            src="images/What-purposes-does-Linux-server1.jpg"
+                            alt="Salle de serveurs exécutant Linux"
+                            class="server"
+                            loading="lazy"
+                        />
+                        <img
+                            src="images/2wlbn479xgo21.png"
+                            alt="Mascotte Tux représentant Linux"
+                            class="tux"
+                            loading="lazy"
+                        />
+                        <figcaption class="linux-caption">Linux, cœur des serveurs modernes</figcaption>
+                        </figure>
+                    </div>
                 </article>
             </div>
             <div id="p4">
